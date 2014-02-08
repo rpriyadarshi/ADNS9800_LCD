@@ -5,6 +5,8 @@ Arduino Uno with ADNS-9800 and OSEPP LCD
 
 The project combines ADNS-9800 Optical sensor by John Kicklighter with OSEPP 16×2 LCD Display & Keypad Shield on an Arduino Uno. The code is modified from original to include Motion Burst and distance measurement. C++ namespace and 2 classes are introduced to better organize the code.
 
+The chip-select pin (NCS) = 3
+
 References:
 ===========
 https://www.kickstarter.com/projects/1034145369/high-speed-laser-optical-sensor
