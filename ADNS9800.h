@@ -53,6 +53,16 @@ namespace adns {
 
 #define ENABLE_MOTION_BURST                      1
 
+// | ADNS-9800 | Arduino Uno Pins
+// | SS        | 3
+// | MO        | 11
+// | SC        | 13
+// | MI        | 12
+// | MOT       | 2 (attachInterrupt() at int.0 = pin 2; int.1 = pin 3)
+// | VI        |+5V (First You must Activate 5V Mode)
+// | AG        | Gnd
+// | DG        | Gnd
+
     class controller {
 public:
         enum MotionBurst {
@@ -99,7 +109,7 @@ private:
         static uint16_t join_byte(byte l, byte h);
     };
 
-    const int _ncs = 3;
+    const int _ncs = 3; // The SS pin
     byte _boot_complete = 0;
 
     volatile byte _data[controller::EndData];
@@ -388,3 +398,4 @@ private:
         _moved = 0;
     }
 };
+
