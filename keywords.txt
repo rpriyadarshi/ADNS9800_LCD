@@ -1,0 +1,25 @@
+#######################################
+# Syntax Coloring Map For ADNS9800
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+int8_t			KEYWORD1
+int16_t			KEYWORD1
+uint8_t			KEYWORD1
+uint16_t		KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+get_xy			KEYWORD2
+get_xy_dist		KEYWORD2
+get_squal		KEYWORD2
+get_fault		KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
