@@ -367,9 +367,9 @@ private:
         pinMode (_ncs, OUTPUT);
 
 #if ENABLE_MOTION_BURST
-        attachInterrupt(0, update_motion_data, FALLING);
-#else
         attachInterrupt(0, update_motion_burst_data, FALLING);
+#else
+        attachInterrupt(0, update_motion_data, FALLING);
 #endif
 
         SPI.begin();
